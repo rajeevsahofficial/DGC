@@ -1,26 +1,55 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --cream: #F7F0E5;
+
+  --forest: #123F38;
+  --forest-dark: #102C29;
+
+  --gold: #D88B22;
+  --gold-warm: #D1841C;
+  --gold-light: #F6B95F;
+
+  --text: #263A37;
+
+  --soft-gray: #E8E9E6;
+  --border: #D9D8D2;
+
+  /* ── Consistent section vertical rhythm ── */
+  --section-py-sm: 4rem;    /* 64px  — tight sections  */
+  --section-py-md: 5rem;    /* 80px  — default mobile  */
+  --section-py-lg: 7rem;    /* 112px — desktop default */
+
+  /* ── Consistent heading clamps ── */
+  /* Hero h1 */
+  --h1-clamp: clamp(2.5rem, 6vw + 1rem, 5.625rem);
+  /* Section h2 — display size */
+  --h2-display: clamp(2.25rem, 4vw + 1rem, 5.5rem);
+  /* Section h2 — large display (WhyDoon / Programs style) */
+  --h2-display-xl: clamp(2.5rem, 5vw + 1rem, 5.5rem);
+  /* Standard body copy */
+  --body-base: 0.9375rem;   /* 15px */
+  --body-sm:   0.875rem;    /* 14px */
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-cream:       var(--cream);
+  --color-forest:      var(--forest);
+  --color-forest-dark: var(--forest-dark);
+  --color-gold:        var(--gold);
+  --color-gold-warm:   var(--gold-warm);
+  --color-gold-light:  var(--gold-light);
+  --color-doon-text:   var(--text);
+  --color-soft-gray:   var(--soft-gray);
+  --color-border:      var(--border);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ── Utility: eyebrow label (used across every section) ── */
+.eyebrow {
+  @apply text-[10px] font-semibold uppercase tracking-[0.32em] sm:text-[11px];
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* ── Utility: section padding rhythm ── */
+.section-py {
+  @apply py-16 sm:py-20 lg:py-28;
 }
