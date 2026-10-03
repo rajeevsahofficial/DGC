@@ -25,7 +25,7 @@ const fadeUp = {
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen overflow-hidden bg-cream text-forest-dark">
+    <section className="relative min-h-screen overflow-hidden bg-white text-forest-dark">
 
       {/* ── BACKGROUND DECORATIONS ── */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
@@ -35,7 +35,7 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.8, rotate: -10 }}
           animate={{ opacity: 1, scale: 1, rotate: 0 }}
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-          className="absolute -right-10 top-24 h-36 w-52 rounded-[48%_52%_48%_52%] bg-gold-light
+          className="absolute hidden md:flex -right-10 top-24 h-36 w-52 rounded-[48%_52%_48%_52%] bg-gold-light
                      sm:-right-6 sm:h-44 sm:w-64
                      lg:right-[9%] lg:h-48 lg:w-72
                      xl:right-[10%] xl:h-56 xl:w-80"
@@ -188,8 +188,7 @@ export default function Hero() {
                 fill
                 priority
                 className="object-cover object-top transition-transform duration-[1600ms] hover:scale-[1.035]"
-                sizes="(max-width: 640px) 280px, (max-width: 768px) 350px,
-                       (max-width: 1024px) 380px, (max-width: 1280px) 350px, 440px"
+                sizes="(max-width: 640px) 280px, (max-width: 768px) 350px, (max-width: 1024px) 380px, (max-width: 1280px) 350px, 440px"
               />
               <div className="absolute inset-0 bg-gradient-to-b from-black/[0.02] via-transparent to-black/20" />
             </div>

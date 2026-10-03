@@ -205,7 +205,7 @@ export default function Footer() {
       {/* Top accent */}
       <div className="h-[3px] w-full bg-gradient-to-r from-[#D1841C]/40 via-[#D1841C] to-[#D1841C]/40" />
 
-      <div className="relative mx-auto max-w-[1450px] px-5 pb-8 pt-14 sm:px-8 sm:pt-20 md:px-10 lg:px-12 xl:px-16">
+      <div className="relative mx-auto max-w-[1450px] px-5 md:px-8 lg:px-10 xl:px-14 pb-8 pt-14 sm:pt-20">
         <div className="grid gap-14 lg:grid-cols-[1.35fr_0.85fr_0.85fr_1fr] lg:gap-10 xl:gap-16">
           <BrandColumn />
           <CampusColumn />

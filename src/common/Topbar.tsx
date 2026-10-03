@@ -3,7 +3,7 @@ import { FiMail, FiPhone, FiShield } from "react-icons/fi";
 export default function TopBar() {
   return (
     <div className="bg-[#102C29] text-white">
-      <div className="mx-auto flex h-[34px] max-w-[1440px] items-center justify-between px-5 lg:px-10 xl:px-14">
+      <div className="mx-auto flex h-[34px] max-w-[1440px] items-center justify-between px-5 md:px-8 lg:px-10 xl:px-14">
 
         {/* Affiliation */}
         <div className="flex min-w-0 items-center gap-2">
